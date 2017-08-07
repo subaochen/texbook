@@ -7,7 +7,6 @@
 \textclass ctex-book
 \begin_preamble
 \input{../writing-common/book-preamble.tex}
-\date{}
 \end_preamble
 \options openany
 \use_default_options true
@@ -28,9 +27,9 @@ PackageOptions url hyphens
 \language_package default
 \inputencoding utf8-plain
 \fontencoding global
-\font_roman "default" "FreeSerif"
-\font_sans "default" "FreeSans"
-\font_typewriter "default" "FreeMono"
+\font_roman "default" "DejaVu Sans"
+\font_sans "default" "DejaVu Serif"
+\font_typewriter "default" "DejaVu Sans Mono"
 \font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts true
@@ -43,6 +42,7 @@ PackageOptions url hyphens
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement tbph
 \paperfontsize default
 \spacing single
 \use_hyperref true
@@ -88,7 +88,7 @@ PackageOptions url hyphens
 \quotes_language english
 \papercolumns 1
 \papersides 2
-\paperpagestyle empty
+\paperpagestyle default
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -98,41 +98,16 @@ PackageOptions url hyphens
 
 \begin_body
 
-\begin_layout Title
-The \SpecialChar TeX
-book
+\begin_layout Chapter
+盒子模型
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-AddLabels
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand include
-filename "basic.lyx"
+基点
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "基点"
+description "reference point，根据此点垂直对齐"
 
 \end_inset
 
@@ -140,26 +115,11 @@ filename "basic.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "boxes.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset nomencl_print
-LatexCommand printnomenclature
-set_width "auto"
+基线
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "基线"
+description "baseline，根据基线水平对齐"
 
 \end_inset
 
